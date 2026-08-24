@@ -1,0 +1,24 @@
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$ lex program2.lex 
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$ gcc lex.yy.c 
+lex.yy.c:518:12: warning: prototype for ‘yywrap’ follows non-prototype definition
+  518 | extern int yywrap ( void );
+      |            ^~~~~~
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$ ./a.out 
+haRsh
+HArSH
+
+table IS Wooden FURNITure 
+TABLE
+ is
+ wOODEN
+ furnitURE
+
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ yacc -d program2yaac.y
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ ls
+program1.l  program2yaac.y  y.tab.c  y.tab.h
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ nano program1.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ nano program2yaac.y
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ lex program1.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ gcc y.tab.c lex.yy.c -o parser
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ ./parser
+Enter an Expression: 2+3-4*9
+Invalid Expression
+Valid Expression
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ ./parser
+Enter an Expression: 2+3
+Valid Expression
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$ ./parser
+Enter an Expression: 2+3*7
+Valid Expression
+
+┌──(kali㉿HarshMachine)-[~/CC/practical4]
+└─$
+
+

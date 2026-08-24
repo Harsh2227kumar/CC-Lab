@@ -1,0 +1,10 @@
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$ lex program.lex 
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$ gcc lex.yy.c
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$ ./a.out 
+g
+G
+
+y
+Y
+
+sit@sit-OptiPlex-3280-AIO:~/1093_cc/practical 5$
