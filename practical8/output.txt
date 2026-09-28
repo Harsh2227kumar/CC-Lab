@@ -1,0 +1,28 @@
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ nano prefix.l
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ nano prefix.y
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ yacc -d prefix.y
+
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ lex prefix.l
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ gcc y.tab.c lex.yy.c
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ ./a.out
+2 3 +
+Result: 5
+5 4 *
+Result: 20
+2 3 + 4 *
+Result: 20
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$

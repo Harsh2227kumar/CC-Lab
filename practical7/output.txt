@@ -1,0 +1,29 @@
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ mkdir practical7
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ cd practical7
+
+┌──(kali㉿HarshMachine)-[~/CC/practical7]
+└─$ nano practical7.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical7]
+└─$ flex  practical7.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical7]
+└─$ gcc lex.yy.c
+
+┌──(kali㉿HarshMachine)-[~/CC/practical7]
+└─$ ./a.out
+Welcome.com
+Line does not end with COM: Welcome.com
+WELCOME>COM
+Line ending with COM: WELCOME>COM
+HELLOCOM
+Line ending with COM: HELLOCOM
+COMPUTERCOMCO
+Line does not end with COM: COMPUTERCOMCO
+
+┌──(kali㉿HarshMachine)-[~/CC/practical7]
+└─$

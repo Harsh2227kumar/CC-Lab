@@ -1,0 +1,40 @@
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ nano p1-practical9.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ flex p1-practical9.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ gcc lex.yy.c
+/usr/bin/x86_64-linux-gnu-ld.bfd: /tmp/cclaEBsE.o: in function `calc':
+lex.yy.c:(.text+0xca): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ gcc lex.yy.c -lm
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ ./a.out
+10 + 5
+Result = 15
+20 - 8
+Result = 12
+6 * 4
+Result = 24
+25 / 5
+Result = 5
+17 %3
+Result = 2
+2 6 3
+Error: Invalid input
+Error: Invalid input
+Error: Invalid input
+2 ^ 3
+Result = 8
+++5
+Result = 6
+--9
+Result = 8
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$

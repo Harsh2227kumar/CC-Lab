@@ -1,0 +1,42 @@
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ nano p2-practical9.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ nano p2-practical9.y
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ yacc -d practical9_p2.y
+
+/usr/bin/bison: practical9_p2.y: cannot open: No such file or directory
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ yacc -d p2-practical9.y
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ lex p2-practical9.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ gcc y.tab.c lex.yy.c -lm
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$ ./a.out
+10 + 5
+Result = 15
+20 - 8
+Result = 12
+6 * 4
+Result = 24
+25/5
+Result = 5
+16%3
+Result = 1
+(2 + 3) * 4
+Result = 20
+++5
+Result = 6
+--9
+Result = 8
+
+┌──(kali㉿HarshMachine)-[~/CC/practical9]
+└─$

@@ -1,0 +1,28 @@
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ mkdir practical6
+
+┌──(kali㉿HarshMachine)-[~/CC]
+└─$ cd practical6
+
+┌──(kali㉿HarshMachine)-[~/CC/practical6]
+└─$ nano practical6.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical6]
+└─$ flex practical6.l
+
+┌──(kali㉿HarshMachine)-[~/CC/practical6]
+└─$ gcc lex.yy.c
+
+┌──(kali㉿HarshMachine)-[~/CC/practical6]
+└─$ nano input.txt
+
+┌──(kali㉿HarshMachine)-[~/CC/practical6]
+└─$ ./a.out < input.txt
+10 -> A
+25 -> 19
+100 -> 64
+255 -> FF
+500 -> 1F4
+
+┌──(kali㉿HarshMachine)-[~/CC/practical6]
+└─$
